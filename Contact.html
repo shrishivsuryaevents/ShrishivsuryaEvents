@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Shivsury Events</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* 🔷 BOX DESIGN */
+        .box {
+            padding: 25px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 🔷 CTA */
+        .cta-section {
+            background: linear-gradient(45deg, #A47251, #d2a679);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        /* 🔷 NAVBAR */
+        /* 🔥 NAVBAR BASE */
+        .custom-navbar {
+            background: linear-gradient(45deg, #A47251, #a47251e0);
+            padding: 10px 15px;
+        }
+
+        /* Logo */
+        .navbar-brand img {
+            height: 65px;
+            object-fit: contain;
+        }
+
+        /* Links */
+        .nav-link {
+            color: #fff !important;
+            font-weight: 500;
+        }
+
+        /* Button */
+        .book-btn {
+            border-radius: 25px;
+        }
+
+        /* 🔥 MOBILE FIX (IMPORTANT) */
+        @media (max-width: 991px) {
+
+            .navbar .container-fluid {
+                position: relative;
+            }
+
+            /* LOGO CENTER */
+            .navbar-brand {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            /* TOGGLER RIGHT */
+            .navbar-toggler {
+                position: absolute;
+                right: 10px;
+                top: 15px;
+            }
+
+            /* MENU CENTER */
+            .navbar-collapse {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .navbar-nav {
+                gap: 10px !important;
+            }
+
+            /* BUTTON WIDTH */
+            .book-btn {
+                width: 60%;
+            }
+        }
+
+        /* 🔥 EXTRA MOBILE */
+        @media (max-width: 576px) {
+
+            .navbar-brand img {
+                height: 55px;
+            }
+
+            .nav-link {
+                font-size: 14px;
+            }
+
+            .book-btn {
+                width: 70%;
+                font-size: 14px;
+            }
+        }
+
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            color: white !important;
+            transition: 0.3s;
+        }
+
+        /* 🔥 Underline animation */
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+
+        /* Hover effect */
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            color: #fff !important;
+        }
+
+        .btn {
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #000 !important;
+            color: #fff !important;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🔶 NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="Images/newlogo.png">
+            </a>
+
+            <!-- Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="nav">
+                <ul class="navbar-nav align-items-center gap-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#events">Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-light fw-bold px-3"
+                            href="https://wa.me/917887363936?text=Hello%20Shivsurya%20Events" target="_blank">
+                            Book Now
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- 🔶 INTRO -->
+    <div class="container text-center my-5">
+        <h1 class="fw-bold">Get In Touch With Us</h1>
+        <p class="text-muted mt-3">
+            तुमच्या प्रत्येक खास इव्हेंटसाठी आम्ही तयार आहोत!
+            लग्न, वाढदिवस, नामकरण, हलदी किंवा कोणताही कार्यक्रम –
+            आम्ही तुमचा इव्हेंट सुंदर आणि memorable बनवतो.
+        </p>
+    </div>
+
+    <!-- 🔶 CONTACT BOXES -->
+    <div class="container my-5">
+        <div class="row g-4 text-center">
+
+            <div class="col-md-4 col-12">
+                <div class="box">
+                    <h5>📞 Call Us</h5>
+                    <p class="mt-2">7887363936</p>
+                    <p>9637338949</p>
+                    <small class="text-muted">Instant booking available</small>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="box">
+                    <h5>💬 WhatsApp</h5>
+                    <p class="text-muted">Fast reply within minutes</p>
+                    <a href="https://wa.me/917887363936?text=Hello%20Shivsurya%20Events" target="_blank"
+                        class="btn btn-success mt-2">
+                        Chat Now
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <div class="box">
+                    <h5>⏰ Working Hours</h5>
+                    <p>Mon - Sun</p>
+                    <p>9 AM - 10 PM</p>
+                    <small class="text-muted">Available all days</small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 🔶 SERVICES -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Our Event Services</h2>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-3 col-6">
+                <div class="box">🎈 Balloon</div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="box">🌸 Flower</div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="box">💍 Wedding</div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="box">🎂 Birthday</div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="box">👶 Baby Shower</div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="box">🔥 Pyro</div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="box">🌼 Haldi</div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="box">🏠 Home</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 🔶 PROCESS -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-4">How We Work</h2>
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-3 col-6">
+                <div class="box">
+                    <h6>1️⃣ Contact</h6>
+                    <p>Call / WhatsApp</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="box">
+                    <h6>2️⃣ Discuss</h6>
+                    <p>Requirement talk</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="box">
+                    <h6>3️⃣ Plan</h6>
+                    <p>Design setup</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="box">
+                    <h6>4️⃣ Execute</h6>
+                    <p>On-time delivery</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 🔶 CTA -->
+    <div class="container-fluid my-5 px-0">
+        <div class="cta-section">
+            <h2 class="fw-bold">Ready to Book?</h2>
+            <p class="mt-2">आजच आमच्याशी संपर्क करा!</p>
+
+            <a href="https://wa.me/917887363936?text=Hello%20Shivsurya%20Events" target="_blank"
+                class="btn btn-light fw-bold mt-3 px-4">
+                Book Now
+            </a>
+        </div>
+    </div>
+    <style>
+        .cta-section {
+            width: 100%;
+            margin: 0;
+            border-radius: 0;
+        }
+    </style>
+
+    <!-- 🔶 SAME FOOTER -->
+    <footer class="footer-section mobile-footer text-white pt-4 pb-2 mt-4">
+        <div class="container-fluid px-3">
+
+            <div class="text-center">
+
+                <!-- Title -->
+                <h4 class="fw-bold mb-2">🌞 श्री शिवसूर्य इव्हेंट्स</h4>
+
+                <!-- Slogan -->
+                <p class="mb-3" style="font-size: 14px;">
+                    Creating Moments • Designing Dreams • Celebrating Life
+                </p>
+
+                <!-- Marathi Line -->
+                <p style="font-size: 13px;">
+                    तुमच्या प्रत्येक खास क्षणाला सुंदर आठवणीत बदलतो.
+                </p>
+
+                <!-- Contact -->
+                <div class="mt-3">
+                    <p class="mb-1">📞 7887363936 | 9637338949</p>
+                    <p class="mb-1">
+                        💬 <a href="https://wa.me/917887363936?text=Hello%20Shivsurya%20Events" target="_blank"
+                            class="text-warning text-decoration-none">
+                            WhatsApp Chat
+                        </a>
+                    </p>
+                    <p class="mb-2">📍 Kolhapur, Maharashtra</p>
+                </div>
+
+            </div>
+
+            <hr class="border-light">
+
+            <!-- Bottom -->
+            <div class="text-center">
+                <p class="mb-0" style="font-size:12px; color:#aaa;">
+                    © 2026 ShivSurya Events | Developed by AS Design
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <style>
+        .footer-section {
+            background: #111;
+        }
+
+        .footer-link {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            transition: 0.3s;
+        }
+
+        .footer-link:hover {
+            color: #b5a985;
+            padding-left: 5px;
+        }
+    </style>
+
+    <footer class="footer-section desktop-footer text-white pt-4 pb-2 mt-4">
+        <div class="container-fluid px-3">
+
+            <div class="row text-center text-md-start">
+
+                <!-- Company Info -->
+                <div class="col-md-5 mb-3">
+                    <h5 class="fw-bold" style="margin-left: 100px;">🌞 ShivSury Events</h5>
+                    <p>
+                        Creating Moments • Designing Dreams • Celebrating Life
+                    </p>
+                    <p style="margin-left: 30px;">
+                        तुमच्या प्रत्येक खास क्षणाला सुंदर आठवणीत बदलतो.
+                    </p>
+                    <img src="Images/newlogo.png" alt="ShivSury Events" style="margin-left: 80px;" height="60">
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">Contact Us</h5>
+                    <p>📞 7887363936</p>
+                    <p>📞 9637338949</p>
+
+                    <p>
+                        💬 <a href="https://wa.me/917887363936?text=Hello%20Shivsurya%20Events" target="_blank"
+                            class="text-warning text-decoration-none">
+                            Chat Now
+                        </a>
+                    </p>
+
+                    <p>📍 Kolhapur, Maharashtra</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="Home.html" class="footer-link">Home</a></li>
+                        <li><a href="Home.html" class="footer-link">Services</a></li>
+                        <li><a href="About.html" class="footer-link">About Us</a></li>
+                        <li><a href="Contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="border-light">
+
+            <div class="text-center">
+                <p style="font-size:12px; color:#aaa;">
+                    © 2026 ShivSurya Events | Developed by AS Design
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <style>
+        /* Desktop default */
+        .mobile-footer {
+            display: none;
+        }
+
+        .desktop-footer {
+            display: block;
+        }
+
+        /* Mobile la switch */
+        @media (max-width: 576px) {
+
+            .desktop-footer {
+                display: none;
+            }
+
+            .mobile-footer {
+                display: block;
+            }
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
